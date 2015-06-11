@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="08T-bB-UzT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="4vd-0a-5mS">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="08T-bB-UzT" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="quG-dp-JOM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="nzQ-nV-4ac"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvg-tM-4Ir" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352" y="-142"/>
+        </scene>
+        <!--Share View Controller-->
+        <scene sceneID="5sQ-Ij-k6F">
+            <objects>
+                <viewController id="Cwe-zJ-hlX" customClass="ShareViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TI6-rG-Ozu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="bXa-ZN-TJS">
+                                <rect key="frame" x="0.0" y="0.0" width="224" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yX5-fw-PgZ">
+                                <rect key="frame" x="230" y="0.0" width="90" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="HCb-mV-HyI">
+                                        <rect key="frame" x="0.0" y="60" width="90" height="360"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="auT-eh-aYw">
+                                                <rect key="frame" x="15" y="8" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="weixin.jpg">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shareWeixinFriends" destination="Cwe-zJ-hlX" eventType="touchUpInside" id="8Id-AF-5tc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13I-F7-2Ka">
+                                                <rect key="frame" x="15" y="102" width="60" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                                <state key="normal" backgroundImage="pengyouquan.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shareWeixinFriendsCircle" destination="Cwe-zJ-hlX" eventType="touchUpInside" id="7cj-9r-582"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tVT-hY-uMD">
+                                        <rect key="frame" x="14" y="417" width="63" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <state key="normal" backgroundImage="bombt_0000s_0000_返回.png">
+                                            <color key="titleColor" red="0.1176470588" green="0.33725490200000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backToHomePage" destination="Cwe-zJ-hlX" eventType="touchUpInside" id="us1-dJ-48t"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0000s_0001_分享到.png" id="4wR-K6-5uT">
+                                        <rect key="frame" x="4" y="8" width="82" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qQR-oP-zwu"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="blankView" destination="bXa-ZN-TJS" id="L1t-ik-Gs1"/>
+                        <outlet property="pengyouquanBtn" destination="13I-F7-2Ka" id="MXm-WZ-9S8"/>
+                        <outlet property="weixinBtn" destination="auT-eh-aYw" id="RQW-kk-mNH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUD-ul-qsa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="-1268"/>
+        </scene>
+        <!--Introduction View Controller-->
+        <scene sceneID="w60-lg-2g7">
+            <objects>
+                <viewController id="sgO-a5-LVf" customClass="IntroductionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nGq-5W-5xe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombrule.png" id="L14-YO-MNi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="425"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.99215686270000003" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vml-Nm-0xy">
+                                <rect key="frame" x="129" y="439" width="63" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" backgroundImage="bombt_0000s_0000_返回.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backHomePage" destination="sgO-a5-LVf" eventType="touchUpInside" id="B2v-DR-Sgt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58431372550000005" green="0.94117647059999998" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="ruleImageView" destination="L14-YO-MNi" id="tJ4-Xt-vNe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRW-aj-1dK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="-698"/>
+        </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HomePageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="PuX-Sb-3ho">
+                                <rect key="frame" x="0.0" y="280" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="450" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mpi-0X-33F">
+                                        <rect key="frame" x="80" y="8" width="160" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" backgroundImage="bombt_0005s_0001_0-499.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ese-Ke-nou" kind="push" id="kCU-nf-R2S"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0004s_0001_10.png" id="pMH-aD-h4h">
+                                        <rect key="frame" x="80" y="75" width="160" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75294117647058822" green="0.76470588235294112" blue="0.98431372549019602" alpha="0.97999999999999998" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="en5-1f-YSb">
+                                <rect key="frame" x="0.0" y="380" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zsi-6L-H7o">
+                                        <rect key="frame" x="80" y="8" width="160" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" backgroundImage="bombt_0005s_0000_自定义.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cga-EX-XBo" kind="push" id="xWw-HO-fiL"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0004s_0000_自定义.png" id="xhh-OL-T3A">
+                                        <rect key="frame" x="80" y="75" width="160" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.58431372549019611" green="0.94117647058823528" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="syv-Bm-L3Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Lr-Sm-7bd">
+                                        <rect key="frame" x="13" y="22" width="92" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" backgroundImage="bombt_0000s_0002_游戏说明.png">
+                                            <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="introductGame" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r4B-ji-MkC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0uW-LV-BpU">
+                                        <rect key="frame" x="125" y="8" width="71" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="iTunesArtwork.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="focus" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2xp-gx-NH5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jQD-ny-rSd">
+                                        <rect key="frame" x="231" y="22" width="57" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" backgroundImage="bombt_0000s_0001_分享.png">
+                                            <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="share" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ifg-MW-dAZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="zoX-At-8X2">
+                                <rect key="frame" x="0.0" y="180" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="150" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XIb-0Q-wCC">
+                                        <rect key="frame" x="80" y="8" width="160" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" backgroundImage="bombt_0005s_0002_0-199.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ese-Ke-nou" kind="push" id="Mhf-Vi-HeO"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0004s_0002_4-10.png" id="fLF-d1-8FD">
+                                        <rect key="frame" x="80" y="74" width="160" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.99215686270000003" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="f3l-Gn-EF2">
+                                <rect key="frame" x="0.0" y="80" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ooz-wl-dJ8">
+                                        <rect key="frame" x="80" y="8" width="160" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" backgroundImage="bombt_0005s_0003_0-49.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ese-Ke-nou" kind="push" id="0mj-1D-S7t"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0004s_0003_4.png" id="sEv-Zn-NkF">
+                                        <rect key="frame" x="80" y="75" width="160" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.76470588240000004" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fCx-QC-UBl"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="Cwe-zJ-hlX" kind="custom" identifier="goToShare" customClass="GoInFromRightSegue" id="kMa-UE-An9"/>
+                        <segue destination="sgO-a5-LVf" kind="modal" identifier="goToIntroduction" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="WGO-it-Ogi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-142"/>
+        </scene>
+        <!--Game Mode View Controller-->
+        <scene sceneID="3Ur-bJ-MXT">
+            <objects>
+                <viewController id="ese-Ke-nou" customClass="GameModeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sC7-hC-zLh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="1ap-8a-Rpf">
+                                <rect key="frame" x="0.0" y="70" width="320" height="140"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aS0-Yb-Rpf">
+                                        <rect key="frame" x="64" y="18" width="192" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" backgroundImage="bombt_0002s_0003_随机模式.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveGameMode:" destination="ese-Ke-nou" eventType="touchUpInside" id="33o-Fr-Plx"/>
+                                            <segue destination="Ubn-k6-iuX" kind="custom" customClass="SeeSlowlySegue" id="G19-lW-dD6"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0002s_0001_随机模式说明.png" id="Ddb-fE-ucc">
+                                        <rect key="frame" x="102" y="85" width="117" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.76470588240000004" blue="0.76078431369999999" alpha="0.97999999999999998" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Bfg-WM-AIT">
+                                <rect key="frame" x="0.0" y="266" width="320" height="134"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Epz-7B-FhP">
+                                        <rect key="frame" x="64" y="9" width="192" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" backgroundImage="bombt_0002s_0002_手动模式.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveGameMode:" destination="ese-Ke-nou" eventType="touchUpInside" id="1ds-af-xga"/>
+                                            <segue destination="3uj-Bg-UsO" kind="push" id="8oa-Bn-aiz"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0002s_0000_手动模式说明.png" id="eRi-yJ-Kvy">
+                                        <rect key="frame" x="91" y="71" width="138" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.58431372550000005" green="0.94117647059999998" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kX9-CH-4DT"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kN8-ob-fBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="-142"/>
+        </scene>
+        <!--Input Bomb View Controller-->
+        <scene sceneID="avN-k6-u6t">
+            <objects>
+                <viewController id="3uj-Bg-UsO" customClass="InputBombViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="192-wB-oML">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="17r-iX-0DF">
+                                <rect key="frame" x="198.00000067117011" y="203" width="107" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bombt_0003s_0000_加入候选.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="joinBombNums" destination="3uj-Bg-UsO" eventType="touchUpInside" id="MrX-aZ-qU4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1wG-xJ-Pv3">
+                                <rect key="frame" x="218" y="424" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bombt_0000s_0000_返回.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backHomePage" destination="3uj-Bg-UsO" eventType="touchUpInside" id="Vvj-B1-RiP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Hs-Md-aFc">
+                                <rect key="frame" x="135" y="134" width="40" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手动输入炸弹" minimumFontSize="17" id="I5u-Vf-P0V">
+                                <rect key="frame" x="41" y="209" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0-99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gU5-wf-ZT9">
+                                <rect key="frame" x="192" y="38" width="89" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0003s_0001_可输入的范围：.png" id="d82-Bi-V0F">
+                                <rect key="frame" x="31" y="45" width="156" height="33"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0003s_0003_已有.png" id="D0S-cV-NdG">
+                                <rect key="frame" x="25" y="141" width="97" height="37"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0003s_0002_个候选.png" id="DC2-2A-bCK">
+                                <rect key="frame" x="187" y="141" width="117" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7G7-4E-tTx">
+                                <rect key="frame" x="119" y="297" width="82" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" backgroundImage="bombt_0000s_0000_确定.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit" destination="3uj-Bg-UsO" eventType="touchUpInside" id="Jd3-SZ-5cI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eOa-FN-Z4T"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="bombsCount" destination="3Hs-Md-aFc" id="tXQ-CY-0hT"/>
+                        <outlet property="numRangeLab" destination="gU5-wf-ZT9" id="xjK-sA-dpx"/>
+                        <outlet property="waittingBombNumStr" destination="I5u-Vf-P0V" id="Pw6-rG-SSW"/>
+                        <segue destination="Ubn-k6-iuX" kind="custom" identifier="InputBombToGameStart" customClass="SeeSlowlySegue" id="VJE-zu-f6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNI-bj-6K6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="508"/>
+        </scene>
+        <!--Game Start View Controller-->
+        <scene sceneID="6Cs-8u-dvj">
+            <objects>
+                <viewController id="Ubn-k6-iuX" customClass="GameStartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k4A-nU-YUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xXl-UC-nUE">
+                                <rect key="frame" x="121" y="342" width="79" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="laba.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishRecord" destination="Ubn-k6-iuX" eventType="touchUpInside" id="zMI-7V-IqQ"/>
+                                    <action selector="recordNum" destination="Ubn-k6-iuX" eventType="touchDown" id="Y3K-t5-QpA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hP8-fH-1fR">
+                                <rect key="frame" x="231" y="430" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="bombt_0000s_0000_返回.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backHomePage" destination="Ubn-k6-iuX" eventType="touchUpInside" id="BUh-PK-eLB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0001s_0002_炸弹范围.png" id="Vyc-A6-DxN">
+                                <rect key="frame" x="84" y="163" width="153" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S9a-OZ-Qfr">
+                                <rect key="frame" x="0.0" y="218" width="320" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0001s_0001_按住喇叭-说数字.png" id="lU8-9S-knA">
+                                <rect key="frame" x="52" y="302" width="216" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhadan.png" id="Z2n-lD-jTy">
+                                <rect key="frame" x="68" y="7" width="184" height="182"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="t7o-bV-cdq"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="inputTipImageView" destination="lU8-9S-knA" id="Lk3-hN-BIp"/>
+                        <outlet property="rangeLab" destination="S9a-OZ-Qfr" id="VWV-90-NG1"/>
+                        <outlet property="recordBtn" destination="xXl-UC-nUE" id="rSe-IG-UtU"/>
+                        <outlet property="zhadanImageView" destination="Z2n-lD-jTy" id="8TX-Ip-FWS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6s-Xu-WHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="-142"/>
+        </scene>
+        <!--Range View Controller-->
+        <scene sceneID="QU5-ii-DJi">
+            <objects>
+                <viewController id="cga-EX-XBo" customClass="RangeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qw3-K9-qNx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pmH-6M-4dO">
+                                <rect key="frame" x="217" y="430" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" backgroundImage="bombt_0000s_0000_返回.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backHomePage" destination="cga-EX-XBo" eventType="touchUpInside" id="9wy-8i-qJr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0    -- " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="geE-Jb-JVv">
+                                <rect key="frame" x="32" y="201" width="102" height="35"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="edW-mj-IL5">
+                                <rect key="frame" x="118" y="309" width="84" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" backgroundImage="bombt_0000s_0000_确定.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit" destination="cga-EX-XBo" eventType="touchUpInside" id="vde-bf-quQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入炸弹最大值" minimumFontSize="17" id="eb1-Cr-ECS">
+                                <rect key="frame" x="148" y="204" width="163" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bombt_0000_输入范围.png" id="kjh-5M-ApU">
+                                <rect key="frame" x="58" y="101" width="205" height="48"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bv3-lk-oTt"/>
+                    <connections>
+                        <outlet property="numRange" destination="eb1-Cr-ECS" id="Kan-oR-ldV"/>
+                        <segue destination="ese-Ke-nou" kind="custom" identifier="RangeToGameMode" id="cIn-gQ-5PR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8KJ-3y-YiT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="496"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bombrule.png" width="636" height="818"/>
+        <image name="bombt_0000_输入范围.png" width="979" height="203"/>
+        <image name="bombt_0000s_0000_确定.png" width="462" height="205"/>
+        <image name="bombt_0000s_0000_返回.png" width="451" height="192"/>
+        <image name="bombt_0000s_0001_分享.png" width="428" height="208"/>
+        <image name="bombt_0000s_0001_分享到.png" width="697" height="208"/>
+        <image name="bombt_0000s_0002_游戏说明.png" width="974" height="188"/>
+        <image name="bombt_0001s_0001_按住喇叭-说数字.png" width="1024" height="120"/>
+        <image name="bombt_0001s_0002_炸弹范围.png" width="975" height="203"/>
+        <image name="bombt_0002s_0000_手动模式说明.png" width="938" height="441"/>
+        <image name="bombt_0002s_0001_随机模式说明.png" width="931" height="216"/>
+        <image name="bombt_0002s_0002_手动模式.png" width="947" height="209"/>
+        <image name="bombt_0002s_0003_随机模式.png" width="973" height="209"/>
+        <image name="bombt_0003s_0000_加入候选.png" width="967" height="197"/>
+        <image name="bombt_0003s_0001_可输入的范围：.png" width="931" height="115"/>
+        <image name="bombt_0003s_0002_个候选.png" width="717" height="201"/>
+        <image name="bombt_0003s_0003_已有.png" width="425" height="204"/>
+        <image name="bombt_0004s_0000_自定义.png" width="835" height="117"/>
+        <image name="bombt_0004s_0001_10.png" width="987" height="106"/>
+        <image name="bombt_0004s_0002_4-10.png" width="941" height="106"/>
+        <image name="bombt_0004s_0003_4.png" width="881" height="106"/>
+        <image name="bombt_0005s_0000_自定义.png" width="1024" height="512"/>
+        <image name="bombt_0005s_0001_0-499.png" width="1024" height="512"/>
+        <image name="bombt_0005s_0002_0-199.png" width="1024" height="512"/>
+        <image name="bombt_0005s_0003_0-49.png" width="1024" height="512"/>
+        <image name="iTunesArtwork.png" width="512" height="512"/>
+        <image name="laba.png" width="600" height="600"/>
+        <image name="pengyouquan.png" width="600" height="600"/>
+        <image name="weixin.jpg" width="650" height="650"/>
+        <image name="zhadan.png" width="256" height="256"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="kCU-nf-R2S"/>
+        <segue reference="VJE-zu-f6q"/>
+    </inferredMetricsTieBreakers>
+</document>
